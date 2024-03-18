@@ -9,7 +9,7 @@
 
 body {
     color: white;
-    background-color: black;
+    background-color: rgba(41, 41, 41, 0);
 }
 
 /*navbar*/
@@ -65,7 +65,7 @@ body {
     width: 100%;
     justify-content: space-between;
     min-height: 100vh;
-    background-color: black;
+    background-color: grey;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -175,6 +175,17 @@ body {
     animation-delay: 1s;
 }
 
+/*addition img*/
+.showcase-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    overflow: hidden;
+}
 .responsive {
     width: 100%;
     height: auto;
