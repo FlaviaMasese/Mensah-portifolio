@@ -372,15 +372,15 @@ body {
 }
 
 .progress-line.python span {
-    width: 75%;
+    width: 90%;
 }
 
 .progress-line.java span {
-    width: 50%;
+    width: 90%;
 }
 
 .progress-line.cpls span {
-    width: 50%;
+    width: 95%;
 }
 
 .progress-line span::after {
@@ -405,15 +405,15 @@ body {
 }
 
 .progress-line.python span::after {
-    content: "75%";
+    content: "90%";
 }
 
 .progress-line.java span::after {
-    content: "50%";
+    content: "90%";
 }
 
 .progress-line.cpls span::after {
-    content: "50%";
+    content: "95%";
 }
 
 .progress-line span::before {
@@ -1481,3 +1481,21 @@ body {
     background-color: white;
     color: #0b0f08;
   }
+  /*hireme btn*/
+  .btn-md{
+    padding: 8px 18px;
+    display: inline-block;
+    background:purple;
+    color: #08080A;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px 36px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: 2px solid purple;
+    transition: all 0.3s ease;
+}
+.btn-md:hover{
+    color: teal;
+    background: none;
+}
