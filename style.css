@@ -65,7 +65,7 @@ body {
     width: 100%;
     justify-content: space-between;
     min-height: 100vh;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -198,7 +198,7 @@ body {
 /*about*/
 
 .about {
-    background-color: #000000b9;
+    background-color: #000000ed;
     display: grid;
     grid-template-columns: repeat(2, .5fr);
     /*align-items: center;*/
@@ -245,7 +245,8 @@ body {
 
 .about-text p {
     color: aliceblue;
-    font-size: 20px;
+    font-size: 17
+    px;
     line-height: 2;
     letter-spacing: 2px;
     margin-bottom: 4rem;
@@ -291,6 +292,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 0px;
+    padding-top: 10;
 }
 
 .container1 {
@@ -517,7 +519,8 @@ body {
 
 /*projects*/
 #Projects{
-    background-color: #000;
+    background-color: hwb(0 0% 100% / 0.956);
+    padding-top: 5px;
 }
 .main-text {
     padding-top: 50px;
@@ -1420,13 +1423,13 @@ body {
     background: rgba(0, 0, 0, 0.4);
   }
   .card .cover.item-a {
-    background-image: url("https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=600&q=80");
+    background-image: url("../../assets/Figure_4.png");
   }
   .card .cover.item-b {
-    background-image: url(".assets\Figure_5.png");
+    background-image: url("../../assets/Figure_5.png");
   }
   .card .cover.item-c {
-    background-image: url('assets\IMG_0757 (edited).jpg');
+    background-image: url('../../assets/Figure_2.png');
   }
   .card .cover h1 {
     font-weight: 600;
@@ -1499,3 +1502,13 @@ body {
     color: teal;
     background: none;
 }
+/*video*/
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  
