@@ -245,7 +245,7 @@ body {
 }
 
 .about-text p {
-    color: aliceblue;
+    color: white;
     font-size: 17
     px;
     line-height: 2;
@@ -1520,116 +1520,87 @@ body {
     min-height: 100%;
   }
   
-  .container22{
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-gap:20px;
-    padding:20px;
-    box-sizing:border-box;
-  }
-  .item222 {
-    background:#0234FF;
-    height:400px;
-    position:relative;
-    border-radius:15px;
-    padding:30px;
-    box-sizing:border-box;
-    color:#fff;
-  }
-  .card22 {
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    margin:auto;
-    z-index:10;
-    width:100%;
-    height:100%;
-    overflow:hidden;
-    border-radius:15px;
-    -webkit-transition: var(--dur);
-    -moz-transition: var(--dur);
-    -ms-transition: var(--dur);
-    -o-transition: var(--dur);
-    transition: var(--dur);
-    clip-path: circle(100.0% at 50% 50%);
-  }
-  .card22 img {
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    margin:auto;
-    z-index:10;
-    height:100%;
-    width:auto;
-    max-width:9999px;
-    overflow:hidden;
-    border-radius:15px;
-    -webkit-transition: var(--dur);
-    -moz-transition: var(--dur);
-    -ms-transition: var(--dur);
-    -o-transition: var(--dur);
-    transition: var(--dur);
-    clip-path: circle(100.0% at 50% 50%);
-  }
-  .item222:hover .card  img{
-    clip-path: circle(0.0% at 50% 50%);
-  }
-  .circle {
-    background:turquoise;
-    max-width:100%;
-    height:100%;
-    position:absolute;
-    z-index:2;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    margin:auto;
-    -webkit-transition: var(--dur-a);
-    -moz-transition: var(--dur-a);
-    -ms-transition: var(--dur-a);
-    -o-transition: var(--dur-a);
-    transition: var(--dur-a);
-    clip-path: circle(100.0% at 50% 50%);
-  }
-  .circle2 {
-    background:#8E01E8;
-    -webkit-transition: var(--dur-b);
-    -moz-transition: var(--dur-b);
-    -ms-transition: var(--dur-b);
-    -o-transition: var(--dur-b);
-    transition: var(--dur-b);
-    clip-path: circle(100.0% at 50% 50%);
-  }
-  .item222:hover .card22  img {
-    clip-path: circle(0.0% at 50% 50%);
-  }
-  .item222:hover .card22  .circle {
-    clip-path: circle(0.0% at 75% 60%);
-  }
-  .item222:hover .card22  .circle2 {
-    clip-path: circle(0.0% at 35% 20%);
-  }
-  img2 {
-    max-width:100%;
-    position:absolute;
-    z-index:3;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    margin:auto;
-  }
-  .content {
-    position:relative;
-    z-index:0;
+  .cta-background {
+    background-size: cover;
+    background-position: center center;
+    bottom: 0;
+    filter: blur(50px);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+ }
+
+ 
+.container23 {
     display:flex;
-    align-items:center;
-    height:100%;
-  }
+    flex-direction: row;
+    justify-content: space-between;
+}
+ 
+ .cta {
+    background: #333;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+ 
+    &:hover {
+       img {
+          top: -10%;
+          filter: brightness(70%);
+       }
+ 
+       .text {
+          bottom: 0;
+       }
+    }
+ 
+    img {
+       bottom: 0;
+       filter: brightness(100%);
+       left: 0;
+       position: absolute;
+       right: 0;
+       top: 0;
+       transition: 0.5s ease-in-out;
+       width: 115%;
+    }
+.img11 {
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+       bottom: 0;
+       filter: brightness(100%);
+       left: 0;
+       position: absolute;
+       right: 0;
+       top: 0;
+       transition: 0.5s ease-in-out;
+       width: 115%;
+}
+ 
+    .text {
+       bottom: -40%;
+       padding: 15px;
+       position: absolute;
+       transition: 0.5s ease-in-out;
+ 
+       h2 {
+          color: #fff;
+          display: inline-block;
+          font-weight: 300;
+          margin-bottom: 5px;
+          position: relative;
+       }
+ 
+       p {
+          color: #fff;
+          font-weight: 300;
+       }
+    }
+ }
+ 
