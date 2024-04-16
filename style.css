@@ -245,8 +245,8 @@ body {
 }
 
 .about-text p {
-    color: white;
-    font-size: 17
+    color: rgb(255, 255, 255);
+    font-size: 20
     px;
     line-height: 2;
     letter-spacing: 2px;
