@@ -1224,6 +1224,9 @@ body {
     .radial-bar .text{
         left: 25%;
     }
+    .bar .info .addhtmll::before{
+        content: "90%";
+    }
     .bar .info .addhtml::before{
         content: "90%";
     }
